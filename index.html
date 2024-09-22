@@ -1,586 +1,374 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Giới thiệu - STEMBots</title>
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <!-- Ionicons -->
-    <link href="css/ionicons.min.css" rel="stylesheet" />
-    <link href="css/linear-icon.css" rel="stylesheet" />
-    <!-- Owl-carousel -->
-    <link href="css/owl.carousel.css" rel="stylesheet" />
-    <link href="css/owl.theme.css" rel="stylesheet" />
-    <!-- Magnific popup style sheet -->
-    <link rel="stylesheet" href="css/magnific-popup.css" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-signin-client_id" content="your-client-id">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Document</title>
+  <style>
+    html {
+        scroll-behavior: smooth; /* Enables smooth scrolling */
+    }
+</style>
+</head>
 
-    <!-- Dolphin style sheet -->
-    <link rel="stylesheet" href="css/weblysleek-ui-fonts.css" />
-    <link rel="stylesheet" href="css/main.css" />
+<body class="text-slate-700 flex flex-col gap-3 bg-gray-200 min-[500px]">
+  <!-- nav -->
+  <div class="bg-white flex items-center justify-between p-4 shadow-md">
+    <div class="flex items-center gap-2">
+      <img src="./assets/images/logo/logo_brand.png" alt="logo" class="w-[44px] h-[44px]">
+      <h2 class="text-center text-2xl">Stembots</h2>
+    </div>
+    <div class="flex gap-5 items-center">
+      <a href="#home">
+        <h3 class="font-[600] hover:text-blue-500 cursor-pointer">Trang chủ</h3>
+      </a>
+      <a href="#about_us">
+        <h3 class="font-[600] hover:text-blue-500 cursor-pointer">Giới thiệu</h3>
+      </a>
+      <a href="#product">
+        <h3 class="font-[600] hover:text-blue-500 cursor-pointer">Sản phẩm</h3>
+      </a>
+      <a href="#review">
+        <h3 class="font-[600] hover:text-blue-500 cursor-pointer">Đánh giá</h3>
+      </a>
+      <a href="#news">
+        <h3 class="font-[600] hover:text-blue-500 cursor-pointer">Tin Tức</h3>
+      </a>
+      <a href="#contact">
+        <h3 class="font-[600] hover:text-blue-500 cursor-pointer">Liên hệ</h3>
+      </a>
+    </div>
+  </div>
+  <!-- end nav -->
+  <!-- body -->
+  <!-- banner -->
+  <section id="home" class="flex flex-col justify-center mx-2">
+    <img src="./assets/images/banner_intro.jpg" alt="banner_intro" class="w-full rounded-lg shadow-md">
+  </section>
+  <!-- end banner -->
+  <!-- about us -->
+  <section id="about_us" class="flex justify-between items-center bg-gray-100 rounded-lg mx-2">
+    <div class="text-right p-10">
+      <h2 class="text-xl lg:text-4xl md:text-3xl sm:text-2xl font-semibold mt-5 text-blue-500">Chúng tôi là ai?</h2>
+      <p class="text-sm lg:text-lg md:text-base mt-5 line-clamp-4 md:line-clamp-6 lg:line-clamp-none text-ellipsis">
+        <span class="text-blue-400 font-semibold">STEMBots</span> được thành lập vào năm 2024 bởi các bạn sinh viên
+        Đại học FPT Hà
+        Nội, với mục đích đem
+        lại
+        trải nghiệm giáo dục theo phương pháp STEM đến gần hơn với trẻ em ở khắp mọi miền Tổ Quốc. Chúng
+        tôi
+        mang đến những bộ kit robot giá cả phải chăng, cùng với đó là những chương trình học toàn diện,
+        giúp
+        mọi trẻ em có cơ hội khám phá và phát triển vượt trội trong lĩnh vực công nghệ và robot.
+      </p>
+    </div>
+    <img src="./assets/images/about_us.png" alt="about_us" class="rounded-r-lg w-1/2 hidden lg:block">
+  </section>
+  <!-- end about us -->
+  <!-- product -->
+  <section id="product" class="flex flex-col lg:flex-row justify-center gap-8 p-5">
+    <img src="./assets//images/product.png" alt="product" class="scale-75">
+    <div class="flex flex-col justify-center w-full">
+      <h2 class="text-4xl font-semibold text-blue-500">Sản phẩm của chúng tôi</h2>
+      <p class="text-lg mt-5">
+        <span class="text-blue-400 font-semibold">STEMBots</span> cung cấp những sản phẩm được thiết kế nhằm đem đến một
+        nền tảng
+        giáo dục về robot và STEM toàn diện, đáp ứng nhu cầu học tập của học sinh và giáo viên thông qua các giải pháp
+        chất lượng cao và có tính tương tác
+      </p>
+      <div class="flex justify-start gap-2">
+        <div class="w-fit">
+          <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#3b82f6">
+            <path
+              d="M427-120v-225h60v83h353v60H487v82h-60Zm-307-82v-60h247v60H120Zm187-166v-82H120v-60h187v-84h60v226h-60Zm120-82v-60h413v60H427Zm166-165v-225h60v82h187v60H653v83h-60Zm-473-83v-60h413v60H120Z" />
+          </svg>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold text-blue-500">Bộ kit lắp ráp robot</h3>
+          <p class="text-lg">Các bộ kit vật lý bao gồm tất cả các linh kiện cần thiết để học sinh có thể lắp ráp và lập
+            trình robot, như cảm biến, động cơ, vi điều khiển và các phần cứng khác.</p>
+        </div>
+      </div>
+      <div class="flex justify-start gap-2">
+        <div class="w-fit">
+          <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#3b82f6">
+            <path
+              d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300Zm0-60h440v-560H300v560ZM180-80q-24 0-42-18t-18-42v-620h60v620h500v60H180Zm120-180v-560 560Z" />
+          </svg>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold text-blue-500">Chương trình học tập</h3>
+          <p class="text-lg">Các kế hoạch bài học có cấu trúc, được thiết kế để giảng dạy các khái niệm STEM thông qua
+            các hoạt động thực hành cùng với bộ kit robot.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end product -->
+  <!-- review -->
+  <section id="review" class="flex flex-col justify-center gap-4 p-5 lg:px-2 md:px-1 bg-gray-100 rounded-lg mx-2">
+    <h2 class="text-4xl font-semibold text-blue-500 text-center">Đánh giá từ khách hàng</h2>
+    <div class="w-full flex items-center justify-center">
+      <div class="relative w-[80%] lg:w-[90%] md:w-full">
+        <div id="carousel_review" class="overflow-hidden relative">
+          <div class="flex transition-transform duration-300">
+            <div class="w-1/3 flex-shrink-0 px-0.5 sd:px-1 lg:px-2">
+              <div class="flex flex-col justify-center gap-2 bg-white rounded-lg shadow-md">
+                <div class="flex justify-center items-center p-2 h-[350px]">
+                  <img src="./assets/images/review/review_4.jpg" alt="review_1"
+                    class="object-cover w-full h-full rounded-lg">
+                </div>
+                <h3 class="text-center font-semibold text-2xl text-blue-500">Học sinh</h3>
+                <p class="text-lg p-2 line-clamp-3 text-ellipsis">
+                  <span class="text-2xl font-semibold">"</span>Em thấy bộ kit rất thú vị!
+                  Em có thể tự lắp ráp và điều khiển robot,
+                  khiến em muốn tìm hiểu thêm về công nghệ.<span class="text-2xl font-semibold">"</span>
+                </p>
+              </div>
+            </div>
+            <div class="w-1/3 flex-shrink-0 px-0.5 sd:px-1 lg:px-2">
+              <div class="flex flex-col justify-center gap-2 bg-white rounded-lg shadow-md">
+                <div class="flex justify-center items-center p-2 h-[350px]">
+                  <img src="./assets/images/review/review_3.jpg" alt="review_3"
+                    class="object-cover w-full h-full rounded-lg">
+                </div>
+                <h3 class="text-center font-semibold text-2xl text-blue-500">Phụ huynh</h3>
+                <p class="text-lg p-2 line-clamp-3 text-ellipsis">
+                  <span class="text-2xl font-semibold">"</span>
+                  Bộ kit này giúp con tôi hứng thú hơn với việc học, vừa
+                  chơi vừa học kỹ năng lập trình và lắp ráp một cách rất tự nhiên.
+                  <span class="text-2xl font-semibold">"</span>
+                </p>
+              </div>
+            </div>
+            <div class="w-1/3 flex-shrink-0 px-0.5 sd:px-1 lg:px-2">
+              <div class="flex flex-col justify-center gap-2 bg-white rounded-lg shadow-md">
+                <div class="flex justify-center items-center p-2 h-[350px]">
+                  <img src="./assets/images/review/review_1.jpg" alt="review_4"
+                    class="object-cover w-full h-full rounded-lg">
+                </div>
+                <h3 class="text-center font-semibold text-2xl text-blue-500">Giáo viên</h3>
+                <p class="text-lg p-2 line-clamp-3 text-ellipsis">
+                  <span class="text-2xl font-semibold">"</span>Bộ kit dễ sử dụng,
+                  giúp tôi hướng dẫn học sinh thực hành STEM
+                  một cách sinh động và hiệu quả trong lớp học.<span class="text-2xl font-semibold">"</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button id="prev_review" class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-transparent rounded-full">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="h-6 w-6" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+          </svg>
+        </button>
+        <button id="next_review"
+          class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-transparent rounded-full">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="h-6 w-6" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+  <!-- end review -->
+  <!-- support -->
+  <section id="support" class="flex justify-between items-center rounded-lg mx-2">
+    <div class="text-right p-10">
+      <h2 class="text-xl lg:text-4xl md:text-3xl sm:text-2xl font-semibold mt-5 text-blue-500">Hỗ trợ giáo dục</h2>
+      <p class="text-sm lg:text-lg md:text-base mt-5 line-clamp-4 md:line-clamp-6 lg:line-clamp-none text-ellipsis">
+        <span class="text-blue-400 font-semibold">STEMBots</span> là một đơn vị chuyên cung cấp các sản phẩm
+        và giải pháp giáo dục robot và STEM, được thiết kế nhằm đem lại trải nghiệm học tập toàn diện cho cả học sinh
+        và giáo viên. Với mục tiêu trang bị kiến thức và kỹ năng cần thiết cho thế hệ trẻ trong thời đại công nghệ
+        4.0, STEMBots không chỉ dừng lại ở việc cung cấp những sản phẩm chất lượng cao mà còn đảm bảo tính tương tác
+        và sáng tạo trong quá trình học tập.
+      </p>
+    </div>
+    <img src="./assets/images/support.png" alt="support" class="rounded-r-lg w-1/2 hidden lg:block">
+  </section>
+  <!-- news -->
+  <section id="news" class="flex flex-col justify-center gap-4 p-5 lg:px-2 md:px-1 bg-gray-100 rounded-lg mx-2">
+    <h2 class="text-4xl font-semibold text-blue-500 text-center">Tin tức mới nhất</h2>
+    <div class="w-full flex items-center justify-center">
+      <div class="relative w-[80%] lg:w-[90%] md:w-full">
+        <div id="carousel_news" class="overflow-hidden relative">
+          <div class="flex transition-transform duration-300">
+            <div class="w-1/3 flex-shrink-0 px-0.5 sd:px-1 lg:px-2">
+              <div class="flex flex-col justify-start gap-2 bg-white rounded-lg shadow-md h-full">
+                <div class="flex justify-center items-center p-2 h-[350px]">
+                  <img src="./assets/images/news/news_1.webp" alt="Hơn 600 sản phẩm tái chế tại Ngày hội
+                  STEM của học sinh" class="object-cover w-full h-full rounded-lg">
+                </div>
+                <div class="px-2 pb-2">
+                  <div class="flex gap-2 items-center">
+                    <img src="./assets/images/logo/tuoitre_news.ico" alt="tuoitre_news" class="w-4 h-4">
+                    <span class="text-sm text-gray-500">Tuổi trẻ • 18/09/2024</span>
+                  </div>
+                  <div>
+                    <a href="https://tuoitre.vn/hon-600-san-pham-tai-che-tai-ngay-hoi-stem-cua-hoc-sinh-20240918110601276.htm"
+                      target="_blank">
+                      <h3 class="font-semibold font-serif hover:text-blue-500">Hơn 600 sản phẩm tái chế tại Ngày hội
+                        STEM của học sinh</h3>
+                    </a>
+                    <p class="text-sm text-gray-500 line-clamp-3 text-ellipsis">Tại Ngày hội STEM sáng 18-9, các em học
+                      sinh giới thiệu hơn 600 sản phẩm tự làm từ những thứ tưởng
+                      chừng bỏ đi như vỏ chai nhựa, túi ni lông, hộp giấy...</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-1/3 flex-shrink-0 px-0.5 sd:px-1 lg:px-2">
+              <div class="flex flex-col justify-start gap-2 bg-white rounded-lg shadow-md h-full">
+                <div class="flex justify-center items-center p-2 h-[350px]">
+                  <img src="./assets/images/news/news_2.webp" alt="Học sinh trải nghiệm với sản phẩm sáng
+                  tạo STEM" class="object-cover w-full h-full rounded-lg">
+                </div>
+                <div class="px-2 pb-2">
+                  <div class="flex gap-2 items-center">
+                    <img src="./assets/images/logo/thanhnien_news.ico" alt="thanhnien_news" class="w-4 h-4">
+                    <span class="text-sm text-gray-500">Thanh niên • 05/04/2024</span>
+                  </div>
+                  <div>
+                    <a href="https://thanhnien.vn/hoc-sinh-trai-nghiem-voi-san-pham-sang-tao-stem-185240405193413657.htm"
+                      target="_blank">
+                      <h3 class="font-semibold font-serif hover:text-blue-500">Học sinh trải nghiệm với sản phẩm sáng
+                        tạo STEM</h3>
+                    </a>
+                    <p class="text-sm text-gray-500 line-clamp-3 text-ellipsis">Hàng ngàn học sinh của TP.HCM đã tham dự
+                      ngày hội trải nghiệm các sản phẩm sáng tạo STEM để hiểu về tích hợp kiến thức từ nhiều lĩnh vực
+                      khác nhau, kết hợp giữa lý thuyết và thực hành, rèn luyện tư duy..</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-1/3 flex-shrink-0 px-0.5 sd:px-1 lg:px-2">
+              <div class="flex flex-col justify-center gap-2 bg-white rounded-lg shadow-md">
+                <div class="flex justify-center items-center p-2 h-[350px]">
+                  <img src="./assets/images/news/news_3.jpg" alt="Mô hình giáo dục STEM được áp dụng trên
+                  thế giới và tại Việt Nam như thế nào?" class="object-cover w-full h-full rounded-lg">
+                </div>
+                <div class="px-2 pb-2">
+                  <div class="flex gap-2 items-center">
+                    <img src="./assets/images/logo/steame_news.png" alt="steame_news" class="w-4 h-4">
+                    <span class="text-sm text-gray-500">STEAMe GARTEN • 21/09/2024</span>
+                  </div>
+                  <div>
+                    <a href="https://steame.vn/phuong-phap-giao-duc-stem/" target="_blank">
+                      <h3 class="font-semibold font-serif hover:text-blue-500">Mô hình giáo dục STEM được áp dụng trên
+                        thế giới và tại Việt Nam như thế nào?</h3>
+                    </a>
+                    <p class="text-sm text-gray-500 line-clamp-3 text-ellipsis">Trong khoảng hai thập niên gần đây,
+                      phương pháp giáo dục STEM đã trở nên phổ biến ở Mỹ, Úc, New Zealand, Phần Lan…. Bố mẹ cùng tham
+                      khảo phương pháp STEM được áp dụng ở một số nước trên thế giới và tại Việt Nam cũng như ở STEAMe
+                      GARTEN như thế nào nhé!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-1/3 flex-shrink-0 px-0.5 sd:px-1 lg:px-2">
+              <div class="flex flex-col justify-center gap-2 bg-white rounded-lg shadow-md">
+                <div class="flex justify-center items-center p-2 h-[350px]">
+                  <img src="./assets/images/news/news_4.png"
+                    alt="Tầm quan trọng của giáo dục STEM trong xã hội hiện đại ngày nay"
+                    class="object-cover w-full h-full rounded-lg">
+                </div>
+                <div class="px-2 pb-2">
+                  <div class="flex gap-2 items-center">
+                    <img src="./assets/images/logo/care_edu.png" alt="care_edu" class="w-4 h-4">
+                    <span class="text-sm text-gray-500">STEAMe GARTEN • 21/09/2024</span>
+                  </div>
+                  <div>
+                    <a href="https://cara.edu.vn/tam-quan-trong-cua-giao-duc-stem-trong-xa-hoi-hien-dai-ngay-nay.html"
+                      target="_blank">
+                      <h3 class="font-semibold font-serif hover:text-blue-500">Tầm quan trọng của giáo dục STEM trong xã
+                        hội hiện đại ngày nay</h3>
+                    </a>
+                    <p class="text-sm text-gray-500 line-clamp-3 text-ellipsis">STEM là phương pháp giáo dục tích hợp
+                      liên môn, STEM là viết tắt của các từ Science (Khoa học), Technology (Công nghệ), Engineering (Kỹ
+                      thuật) và Math (Toán học). Giáo dục STEM về bản chất được hiểu là trang bị cho người học những
+                      kiến thứ, kỹ năng cần thiết liên quan đến các lĩnh vực khoa học, công nghệ, kỹ thuật và toán học.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button id="prev_news" class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-transparent rounded-full">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="h-6 w-6" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+          </svg>
+        </button>
+        <button id="next_news" class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-transparent rounded-full">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="h-6 w-6" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+  <!-- end news -->
+  <!-- end body -->
+  <!-- footer -->
+  <section id="contact">
+    <div class="flex items-center justify-center">
+      <div class="rounded-lg p-6 max-w-lg w-full">
+        <h2 class="text-2xl font-bold mb-4 text-gray-800">Để lại số điện thoại hoặc email</h2>
+        <form id="subscribeForm" method="POST" class="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4">
+            <!-- Input Field for Email or Phone -->
+            <input 
+                type="text" 
+                id="emailOrPhone"
+                placeholder="Email hoặc điện thoại" 
+                class="w-full sm:flex-1 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                required
+            />
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Rubik:400,700,900"
-      rel="stylesheet"
-    />
-    <link rel="icon" href="images/Logo.png" type="image/png" />
-  </head>
-  <body>
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button
-            type="button"
-            class="navbar-toggle collapsed"
-            data-toggle="collapse"
-            data-target="#bs-example-navbar-collapse-1"
-            aria-expanded="false"
-          >
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">
-            <img src="images/Logo.png" alt="" />
-            <span class="text--bold">STEMBots</span>
+            <!-- Submit Button -->
+            <button 
+                type="submit" 
+                class="w-full sm:w-auto bg-blue-500 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                Đăng ký
+            </button>
+        </form>
+        <p id="successMessage" class="text-green-500 mt-4 hidden">Thank you for subscribing!</p>
+    </div>
+    </div>
+    <footer class="bg-gray-900 text-gray-300 py-10">
+      <div class="container mx-auto px-5 flex flex-col md:flex-row justify-between items-center">
+  
+        <!-- Logo Section -->
+        <div class="mb-6 md:mb-0 w-fit">
+          <a href="#">
+            <img src="./assets/images/logo/logo_with_txt.png" alt="Company Logo" class="h-12 md:w-1/3 md:h-auto">
           </a>
         </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="active">
-              <a href="#home"
-                >Trang chủ <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li><a href="#about">Về STEMBots</a></li>
-            <li><a href="#products">Sản phẩm</a></li>
-            <li><a href="#testimonials">Đánh giá</a></li>
-            <li><a href="#blog">Tin tức</a></li>
-            <li><a href="#contact">Liên hệ</a></li>
-          </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-      </div>
-      <!-- /.container-fluid -->
-    </nav>
-    <!-- HOME -->
-    <section
-      id="home"
-      class="section jumbotron-section bg--position-top no-repeat bg-cover md-display-table"
-      style="
-        background-image: url(images/STEMBOTS-BANNER.png);
-        background-size: cover;
-      "
-    ></section>
-    <!-- HOME END -->
-
-    <!-- ABOUT -->
-    <section id="about" class="section padding-top-bottom-65">
-      <div class="row absolute-image-container">
-        <div class="col-md-6 col-md-offset-6">
-          <img
-            class="max-width-100 position--realtive"
-            src="images/video.png"
-            alt=""
-          />
-          <div class="position--absolute top-0 left-0 full-width full-height">
-            <div class="buttuon-container">
-              <div class="btn-wraper">
-                <a
-                  href="https://www.youtube.com/watch?v=5QQ-bMlhAj8"
-                  class="popup-youtube btn btn-icon btn-round btn-icon-text test-popup-link"
-                >
-                  <span
-                    class="btn-icon-container-lg btn-icon-text-container bg-white border-white-opacity"
-                    ><i class="ion-play"></i
-                  ></span>
-                  <span class="margin-left-10 line-height-btn-lg text-white"
-                    >watch story</span
-                  >
-                </a>
-              </div>
-            </div>
-          </div>
+  
+        <!-- Contact Us Section -->
+        <div class="text-center md:text-left w-1/2">
+          <h2 class="text-xl font-semibold text-white mb-3">Contact Us</h2>
+          <p>Email: <a href="mailto:stembots2024.edu@gmail.com" class="text-blue-400">stembots2024.edu@gmail.com</a></p>
+          <p>Fanpage: <a href="https://www.facebook.com/profile.php?id=61566019799817" class="text-blue-400">Stembots</a></p>
+          <p>Điện thoại: <a href="tel:+123456789" class="text-blue-400">(+84) 86-8110-603</a></p>
+          <p>Địa chỉ: Đại học FPT Hà Nội, Khu Công nghệ cao Hòa Lạc, Km29, Đại lộ Thăng Long, H. Thạch Thất, Tp. Hà Nội</p>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="regular-content">
-            <header>
-              <h3>
-                <span class="text--light">Về chúng tôi</span>
-                <br />
-                <span class="text--semi-bold">STEMBots</span>
-              </h3>
-            </header>
-            <p>
-              STEMBots được thành lập vào năm 2024 bởi các bạn sinh viên Đại học
-              FPT Hà Nội, với mục đích đem lại trải nghiệm giáo dục theo phương
-              pháp STEM đến gần hơn với trẻ em ở khắp mọi miền Tổ Quốc. Chúng
-              tôi mang đến những bộ kit robot giá cả phải chăng, cùng với đó là
-              những chương trình học toàn diện, giúp mọi trẻ em có cơ hội khám
-              phá và phát triển vượt trội trong lĩnh vực công nghệ và robot.
-            </p>
-          </div>
-        </div>
+  
+      <!-- Copyright Section -->
+      <div class="text-center text-gray-500 text-sm mt-8">
+        &copy; 2024 Stembots. All rights reserved.
       </div>
-    </section>
-    <!-- ABOUT END -->
-
-    <!-- FEATURE -->
-    <section id="products" class="section features">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="featured-image-container">
-              <img
-                class="max-width-100"
-                src="images/featured-vector.png"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="regular-content margin-bottom--30">
-              <header>
-                <h3>
-                  <span class="text--light"> Sản phẩm</span>
-                </h3>
-              </header>
-              <p>
-                <strong>STEMBots</strong> cung cấp những sản phẩm được thiết kế
-                nhằm đem đến một nền tảng giáo dục về robot và STEM toàn diện,
-                đáp ứng nhu cầu học tập của học sinh và giáo viên thông qua các
-                giải pháp chất lượng cao và có tính tương tác
-              </p>
-            </div>
-            <div class="media">
-              <span class="media-left" style="color: #007ee5">
-                <div class="media-object">
-                  <i class="ion-ios-toggle-outline"></i>
-                </div>
-              </span>
-              <div class="media-body">
-                <h4 class="media-heading">Bộ kit robot</h4>
-                <div class="media-text">
-                  <p>
-                    Các bộ kit vật lý bao gồm tất cả các linh kiện cần thiết để
-                    học sinh có thể lắp ráp và lập trình robot, như cảm biến,
-                    động cơ, vi điều khiển và các phần cứng khác.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="media">
-              <span class="media-left" style="color: #007ee5">
-                <div class="media-object media-iconic">
-                  <i class="ion-ios-photos-outline"></i>
-                </div>
-              </span>
-              <div class="media-body">
-                <h4 class="media-heading">Chương trình học tập</h4>
-                <div class="media-text">
-                  <p>
-                    Các kế hoạch bài học có cấu trúc, được thiết kế để giảng dạy
-                    các khái niệm STEM thông qua các hoạt động thực hành cùng
-                    với bộ kit robot.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- FEATURE END-->
-
-    <!-- TESTIMONIAL -->
-    <section
-      id="testimonials"
-      class="section testimonial-bg"
-      style="background-image: url(images/testimonials.jpg)"
-    >
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <div
-              id="testimonial-carousel"
-              class="owl-carousel testimonial-sliders"
-            >
-              <div>
-                <div class="row">
-                  <div class="col-md-8 col-md-offset-2">
-                    <div class="testimonial-container">
-                      <div class="client-details text-center">
-                        <img src="images/444484001_385801931087105_6977556550060004400_n.jpg" alt="" />
-                        <h5 class="client-name">Học Sinh</h5>
-                        <hr class="section-devider" />
-                      </div>
-                      <div class="testimonial-content">
-                        <p class="testimonial-speech">
-                          <img
-                            class="img-qoute"
-                            src="images/quate.png"
-                            alt=""
-                          />"Em thấy bộ kit rất thú vị!
-                           Em có thể tự lắp ráp và điều khiển robot,
-                            khiến em muốn tìm hiểu thêm về công nghệ."
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <div class="row">
-                  <div class="col-md-8 col-md-offset-2">
-                    <div class="testimonial-container">
-                      <div class="client-details text-center">
-                        <img src="images/415958100_297632083237424_3826151631292017990_n.jpg"  alt="" />
-                        <h5 class="client-name">Giáo Viên</h5>
-                        <hr class="section-devider" />
-                      </div>
-                      <div class="testimonial-content">
-                        <p class="testimonial-speech">
-                          <img
-                            class="img-qoute"
-                            src="images/quate.png"
-                            alt=""
-                          />"Em thấy bộ kit rất thú vị!
-                           Em có thể tự lắp ráp và điều khiển robot,
-                            khiến em muốn tìm hiểu thêm về công nghệ."
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <div class="row">
-                  <div class="col-md-8 col-md-offset-2">
-                    <div class="testimonial-container">
-                      <div class="client-details text-center">
-                        <img src="images/444480637_379023675098264_5498784604761058932_n.jpg" alt="" />
-                        <h5 class="client-name">Phụ Huynh</h5>
-                        <hr class="section-devider" />
-                      </div>
-                      <div class="testimonial-content">
-                        <p class="testimonial-speech">
-                          <img
-                            class="img-qoute"
-                            src="images/quate.png"
-                            alt=""
-                          />"Bộ kit dễ sử dụng,
-                           giúp tôi hướng dẫn học sinh thực hành STEM
-                            một cách sinh động và hiệu quả trong lớp học."
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- TESTIMONIAL END-->
-
-    <!-- WORKFLOW -->
-    <section id="workflow" class="section padding-top-bottom-65">
-      <div class="row absolute-image-container">
-        <div class="col-md-6 col-md-offset-6">
-          <img class="max-width-100" src="images/workflow.png" alt="" />
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="regular-content">
-              <header>
-                <h3>
-                  <span class="text--semi-bold">HỖ TRỢ</span>
-                  <span class="text--light">GIÁO DỤC</span>
-                </h3>
-              </header>
-              <p>
-                Chúng tôi cam kết cung cấp đầy đủ các chương trình,
-                 tài liệu, thiết bị và đào tạo cho giáo viên và trung tâm,
-                  đảm bảo một trải nghiệm giảng dạy và học tập hiệu quả, thú vị.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- WORKFLOW END-->
-
-    <!-- CLIENT -->
-    <!-- <section
-      id="reviews"
-      class="section client-section bg--position-center no-repeat bg-cover"
-      style="background-image: url(images/clints_logo.png)"
-    >
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 col-sm-6">
-            <img
-              src="images/logo1.png"
-              alt=""
-              class="img-responsive max-width-100 max-height-60 padding-15 align--center"
-            />
-          </div>
-          <div class="col-md-4 col-sm-6">
-            <img
-              src="images/logo2.png"
-              alt=""
-              class="img-responsive max-width-100 max-height-60 padding-15 align--center"
-            />
-          </div>
-          <div class="col-md-4 col-sm-6">
-            <img
-              src="images/logo3.png"
-              alt=""
-              class="img-responsive max-width-100 max-height-60 padding-15 align--center"
-            />
-          </div>
-          <div class="col-md-4 col-sm-6">
-            <img
-              src="images/logo4.png"
-              alt=""
-              class="img-responsive max-width-100 max-height-60 padding-15 align--center"
-            />
-          </div>
-          <div class="col-md-4 col-sm-6">
-            <img
-              src="images/logo5.png"
-              alt=""
-              class="img-responsive max-width-100 max-height-60 padding-15 align--center"
-            />
-          </div>
-          <div class="col-md-4 col-sm-6">
-            <img
-              src="images/logo6.png"
-              alt=""
-              class="img-responsive max-width-100 max-height-60 padding-15 align--center"
-            />
-          </div>
-        </div>
-        <div class="author-name-sign text-center">
-          -And thousand of more companies
-        </div>
-      </div>
-    </section> -->
-    <!-- CLIENT END -->
-
-    <!-- BLOG -->
-    <section id="blog" class="section section-news">
-      <div class="container">
-        <header class="header">
-          <h3 class="text-center">
-            <span class="text--semi-bold">Tin</span>
-            <span class="text--light">Tức</span>
-          </h3>
-        </header>
-        <div id="blog-carousel" class="owl-carousel">
-          <div>
-            <div class="news-card">
-              <img
-                src="images/base64-1726631937299931547565.webp"
-                alt=""
-                class="img-responsive max-width-100"
-              />
-              <div class="news-content">
-                <p><span class="category-name">Báo Tuổi Trẻ</span></p>
-                <a href="https://tuoitre.vn/hon-600-san-pham-tai-che-tai-ngay-hoi-stem-cua-hoc-sinh-20240918110601276.htm" class="news-title">Hơn 600 sản phẩm tái chế tại Ngày hội STEM của học sinh</a>
-                <p class="news-date">21-09-2024</p>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="news-card">
-              <img
-                src="images/nvt-1712319769326499560560.webp"
-                alt=""
-                class="img-responsive max-width-100"
-              />
-              <div class="news-content">
-                <p><span class="category-name">Báo Thanh Niên</span></p>
-                <a href="https://thanhnien.vn/hoc-sinh-trai-nghiem-voi-san-pham-sang-tao-stem-185240405193413657.htm" class="news-title">Học sinh trải nghiệm với sản phẩm sáng tạo STEM</a>
-                <p class="news-date">05-04-2024</p>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="news-card">
-              <img
-                src="images/stem-viet-nam-4.jpg"
-                alt=""
-                class="img-responsive max-width-100"
-              />
-              <div class="news-content">
-                <p><span class="category-name">Steame.vn</span></p>
-                <a href="https://steame.vn/phuong-phap-giao-duc-stem/" class="news-title">Mô hình giáo dục STEM được áp dụng trên thế giới và tại Việt Nam như thế nào?
-                </a>
-                <p class="news-date">21-09-2024</p>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <div class="news-card">
-              <img
-                src="images/1-600-x-294.png"
-                alt=""
-                class="img-responsive max-width-100"
-              />
-              <div class="news-content">
-                <p><span class="category-name">cara.vn</span></p>
-                <a href="https://cara.edu.vn/tam-quan-trong-cua-giao-duc-stem-trong-xa-hoi-hien-dai-ngay-nay.html" class="news-title">Tầm quan trọng của giáo dục STEM trong xã hội hiện đại ngày nay</a>
-                <p class="news-date">21-04-2024</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- BLOG END-->
-
-    <!-- SUBSCRIPTION -->
-    <section
-      id="contact"
-      class="section section-subscribe bg--position-center no-repeat bg-cover"
-      style="background-image: url(images/subscribe.png)"
-    >
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-md-offset-2">
-            <div
-              class="subscribe-card bg--position-center no-repeat"
-              style="background-image: url(images/mail.png)"
-            >
-              <header>
-                <h3 class="text-center" style="padding: 1rem">
-                  <span style="font-weight: bold">Đăng ký </span>
-                  <br />
-                  <span style="font-weight: 100"
-                    >để nhận thêm thông tin về sản phẩm</span
-                  >
-                </h3>
-              </header>
-              <div class="subscription-form">
-                <form
-                  style="
-                    width: 70%;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    margin: 0 auto;
-                  "
-                >
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="email-input"
-                    placeholder="Email hoặc SĐT"
-                  />
-                  <button class="btn btn-primary btn-sm">Xác nhận</button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- SUBSCRIPTION END-->
-
-    <!-- FOOTER -->
-    <footer>
-      <section class="section" style="padding: 3rem 0">
-        <div class="container">
-          <div class="row">
-            <div
-              class="col col-md-3"
-              style="display: flex; justify-content: center"
-            >
-              <img
-                class="img-fluid"
-                src="images/STEMBOTS-footer-logo.png"
-                alt=""
-                style="width: 200px"
-              />
-            </div>
-            <div class="col col-md-9">
-              <div class="contact-details">
-                <div class="media">
-                  <div class="media-left contact-media-left">
-                    <p>Địa chỉ</p>
-                  </div>
-                  <div class="media-body">
-                    <p>
-                      Đại học FPT Hà Nội, Khu Công nghệ cao Hòa Lạc, Km29, Đại
-                      lộ Thăng Long, H. Thạch Thất, Tp. Hà Nội
-                    </p>
-                  </div>
-                </div>
-                <div class="media">
-                  <div class="media-left contact-media-left">
-                    <p>Điện thoại</p>
-                  </div>
-                  <div class="media-body">
-                    <p>(+84) 86-8110-603</p>
-                  </div>
-                </div>
-                <div class="media">
-                  <div class="media-left contact-media-left">
-                    <p>Fanpage</p>
-                  </div>
-                  <div class="media-body">
-                    <p>
-                      <a
-                        href="https://www.facebook.com/profile.php?id=61566019799817"
-                        >STEMBots</a
-                      >
-                    </p>
-                  </div>
-                </div>
-                <div class="media">
-                  <div class="media-left contact-media-left">
-                    <p>Email</p>
-                  </div>
-                  <div class="media-body">
-                    <p>stembots2024.edu@gmail.com</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </footer>
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery-3.1.0.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Owl-carousel JS -->
-    <script src="js/owl.carousel.js"></script>
-    <!-- Dolphin JS -->
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <!-- Dolphin JS -->
-    <script src="js/main.js"></script>
-  </body>
+  </section>
+</body>
+<script src="https://apis.google.com/js/api.js"></script>
+<script src="./script/carousel.js"></script>
+<script src="./script/google_sheet.js"></script>
 </html>
