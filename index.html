@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-signin-client_id" content="your-client-id">
   <script src="https://cdn.tailwindcss.com"></script>
   <title>Document</title>
   <style>
@@ -15,7 +16,7 @@
 
 <body class="text-slate-700 flex flex-col gap-3 bg-gray-200 min-[500px]">
   <!-- nav -->
-  <div class="bg-white flex items-center justify-between p-4 shadow-md sticky top-0 z-50">
+  <div class="bg-white flex items-center justify-between p-4 shadow-md">
     <div class="flex items-center gap-2">
       <img src="./assets/images/logo/logo_brand.png" alt="logo" class="w-[44px] h-[44px]">
       <h2 class="text-center text-2xl">Stembots</h2>
@@ -320,10 +321,11 @@
     <div class="flex items-center justify-center">
       <div class="rounded-lg p-6 max-w-lg w-full">
         <h2 class="text-2xl font-bold mb-4 text-gray-800">Để lại số điện thoại hoặc email</h2>
-        <form action="#" method="POST" class="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4">
+        <form id="subscribeForm" method="POST" class="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4">
             <!-- Input Field for Email or Phone -->
             <input 
                 type="text" 
+                id="emailOrPhone"
                 placeholder="Email hoặc điện thoại" 
                 class="w-full sm:flex-1 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                 required
@@ -336,6 +338,7 @@
                 Đăng ký
             </button>
         </form>
+        <p id="successMessage" class="text-green-500 mt-4 hidden">Thank you for subscribing!</p>
     </div>
     </div>
     <footer class="bg-gray-900 text-gray-300 py-10">
@@ -365,6 +368,7 @@
     </footer>
   </section>
 </body>
-<script src="script.js"></script>
-
+<script src="https://apis.google.com/js/api.js"></script>
+<script src="./script/carousel.js"></script>
+<script src="./script/google_sheet.js"></script>
 </html>
