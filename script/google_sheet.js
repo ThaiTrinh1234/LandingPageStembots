@@ -6,6 +6,8 @@ const phonePattern = /(84|0[3|5|7|8|9])+([0-9]{8})\b/;
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
 
+  const name = document.getElementById("name").value.trim();
+
   const emailOrPhone = document.getElementById("emailOrPhone").value.trim();
 
   if (emailOrPhone === "") {
@@ -28,7 +30,7 @@ form.addEventListener("submit", async (event) => {
 
   try {
     await fetch(
-      `https://script.google.com/macros/s/AKfycbwYIOu3LuIk1hmPGlWIb-8-v2KZtSWBj--NOsK9eyKU1tNu-XApTT8E_SpjXmvJg6WQlw/exec?date=${new Date().toLocaleString()}&email=${email}&phone='${phone}`,
+      `https://script.google.com/macros/s/AKfycbwYIOu3LuIk1hmPGlWIb-8-v2KZtSWBj--NOsK9eyKU1tNu-XApTT8E_SpjXmvJg6WQlw/exec?date=${new Date().toLocaleString()}&email=${email}&phone='${phone}&name=${name}`,
       {
         method: "GET",
         mode: "no-cors",
